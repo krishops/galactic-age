@@ -33,7 +33,8 @@ export default class SpaceTraveler  {
   }
 
   venusLifeToLive() {
-    
+    let lifeLeftVenus = Math.abs(this.venusLife() - this.venusCalc());
+      return lifeLeftVenus
   }
 
   marsCalc()  {
@@ -47,7 +48,8 @@ export default class SpaceTraveler  {
   }
 
   marsLifeToLive() {
-
+    let lifeLeftMars = Math.abs(this.marsLife() - this.marsCalc());
+      return lifeLeftMars
   }
 
   jupiterCalc()  {
@@ -61,6 +63,7 @@ export default class SpaceTraveler  {
   }
 
   jupiterLifeToLive() {
-
+    let lifeLeftJupiter = Math.abs(this.jupiterLife() - this.jupiterCalc());
+      return lifeLeftJupiter
   }
 }
