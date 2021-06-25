@@ -1,21 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Galactic Age</title>
 </head>
+
 <body>
   <main class="container">
-    <form id="space-age">
-      <div class="form-group">
-        <label for="age" class="question">What is your age?</label>
-        <input type="text" id="current-age" class="form-control">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <h3 class="card-header">Space Traveler</h3>
+          <div class="card-body">
+            <form id="space-age">
+              <div class="form-group">
+                <label for="age" class="question">What is your age?</label>
+                <input type="text" id="current-age" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="age" class="question">What is your life expectancy?</label>
+                <input type="text" id="life-expectancy" class="form-control">
+              </div>
+              <button class="btn btn-primary" btn-type="click" id="attack">Calculate</button>
+              <div>Earth Age: <span id="ageEarth"></span></div>
+              <div>Life Expectancy: <span id="lifeExpectancy"></span></div>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="age" class="question">What is your life expectancy?</label>
-        <input type="text" id="life-expectancy" class="form-control">
+    </div>
+    <div class="row">
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <h5 class="card-header">Mercury</h5>
+          <div class="card-body">
+            <div>Age:</div>
+            <div>Life Expectancy:</div>
+            <div>Years to Live:</div>
+          </div>
+        </div>
       </div>
-
-    </form>
+      <div class="col-md-3">
+        <div class="card">
+          <h5 class="card-header">Venus</h5>
+          <div class="card-body">
+            <div>Age:</div>
+            <div>Life Expectancy:</div>
+            <div>Years to Live:</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <h5 class="card-header">Mars</h5>
+          <div class="card-body">
+            <div>Age:</div>
+            <div>Life Expectancy:</div>
+            <div>Years to Live:</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <h5 class="card-header">Jupiter</h5>
+          <div class="card-body">
+            <div>Age:</div>
+            <div>Life Expectancy:</div>
+            <div>Years to Live:</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </body>
+
 </html>
