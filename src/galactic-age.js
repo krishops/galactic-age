@@ -1,5 +1,5 @@
-export default class SpaceTraveler  {
-  constructor(ageEarth, lifeExpectancy)  {
+export default class SpaceTraveler {
+  constructor(ageEarth, lifeExpectancy) {
     this.ageEarth = ageEarth;
     this.ageMercury = 0;
     this.ageVenus = 0;
@@ -8,62 +8,62 @@ export default class SpaceTraveler  {
     this.lifeExpectancy = lifeExpectancy;
   }
 
-  mercuryCalc()  {
+  mercuryCalc() {
     let ageMercury = Math.round(this.ageEarth / 0.24);
-      return ageMercury;
-  }  
+    return ageMercury;
+  }
 
   mercuryLife() {
     let mercuryLifeExpectancy = Math.round(this.lifeExpectancy / 0.24);
-      return mercuryLifeExpectancy;
+    return mercuryLifeExpectancy;
   }
   mercuryLifeToLive() {
     let lifeLeftMercury = Math.abs(this.mercuryLife() - this.mercuryCalc());
-      return lifeLeftMercury
+    return lifeLeftMercury;
   }
 
-  venusCalc()  {
+  venusCalc() {
     let ageVenus = Math.round(this.ageEarth / 0.62);
-      return ageVenus;
+    return ageVenus;
   }
 
   venusLife() {
     let venusLifeExpectancy = Math.round(this.lifeExpectancy / 0.62);
-      return venusLifeExpectancy;
+    return venusLifeExpectancy;
   }
 
   venusLifeToLive() {
     let lifeLeftVenus = Math.abs(this.venusLife() - this.venusCalc());
-      return lifeLeftVenus
+    return lifeLeftVenus;
   }
 
-  marsCalc()  {
+  marsCalc() {
     let ageMars = Math.round(this.ageEarth / 1.88);
-      return ageMars;
+    return ageMars;
   }
 
   marsLife() {
     let marsLifeExpectancy = Math.round(this.lifeExpectancy / 1.88);
-      return marsLifeExpectancy;
+    return marsLifeExpectancy;
   }
 
   marsLifeToLive() {
     let lifeLeftMars = Math.abs(this.marsLife() - this.marsCalc());
-      return lifeLeftMars
+    return lifeLeftMars;
   }
 
-  jupiterCalc()  {
+  jupiterCalc() {
     let ageJupiter = Math.round(this.ageEarth / 11.86);
-      return ageJupiter;
+    return ageJupiter;
   }
 
   jupiterLife() {
     let jupiterLifeExpectancy = Math.round(this.lifeExpectancy / 11.86);
-      return jupiterLifeExpectancy;
+    return jupiterLifeExpectancy;
   }
 
   jupiterLifeToLive() {
     let lifeLeftJupiter = Math.abs(this.jupiterLife() - this.jupiterCalc());
-      return lifeLeftJupiter
+    return lifeLeftJupiter;
   }
 }
