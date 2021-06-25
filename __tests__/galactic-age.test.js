@@ -46,4 +46,16 @@ describe('SpaceTraveler', () => {
   test('should determine correct age on Jupiter', () => {
     expect(msFrizzle.jupiterCalc()).toEqual(3);
   });
+
+  test('should determine life expectancy on Venus', () => {
+    expect(msFrizzle.venusLife()).toEqual(126);
+  });
+
+  test('should determine life expectancy on Mars', () => {
+    expect(msFrizzle.marsLife()).toEqual(41);
+  });
+
+  test('should determine life expectancy on Jupiter', () => {
+    expect(msFrizzle.jupiterLife()).toEqual(7);
+  });
 });
