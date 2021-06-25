@@ -8,7 +8,8 @@ export default class SpaceTraveler  {
     this.lifeExpectancy = lifeExpectancy;
   }
 
-  mercuryCalc ()  {
-    
+  mercuryCalc()  {
+    let ageMercury = Math.round(this.ageEarth / 0.24);
+      return ageMercury;
   }  
 }
