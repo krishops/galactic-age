@@ -18,7 +18,7 @@ export default class SpaceTraveler  {
       return mercuryLifeExpectancy;
   }
   mercuryLifeToLive() {
-    let lifeleftMercury = this.mercuryLife() - this.mercuryCalc();
-      return lifeleftMercury;
+    let lifeLeftMercury = Math.abs(this.mercuryLife() - this.mercuryCalc());
+      return lifeLeftMercury
   }
 }
