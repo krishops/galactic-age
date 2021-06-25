@@ -27,11 +27,23 @@ describe('SpaceTraveler', () => {
 
   test('should determine how many years left to live on Mercury', () => {
     expect(msFrizzle.mercuryLifeToLive()).toEqual(183);
-  })
+  });
 
   test('should determine how many years past life expectancy have been lived on Mercury', () => {
     const msFrizzle = new SpaceTraveler(80, 78);
     expect(msFrizzle.ageEarth).toEqual(80);
     expect(msFrizzle.mercuryLifeToLive()).toEqual(8);
-  })
+  });
+
+  test('should determine correct age on Venus', () => {
+    expect(msFrizzle.venusCalc()).toEqual(55);
+  });
+
+  test('should determine correct age on Mars', () => {
+    expect(msFrizzle.marsCalc()).toEqual(18);
+  });
+
+  test('should determine correct age on Jupiter', () => {
+    expect(msFrizzle.jupiterCalc()).toEqual(3);
+  });
 });

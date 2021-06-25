@@ -21,4 +21,17 @@ export default class SpaceTraveler  {
     let lifeLeftMercury = Math.abs(this.mercuryLife() - this.mercuryCalc());
       return lifeLeftMercury
   }
+
+  venusCalc()  {
+  
+  }
+
+
+  marsCalc()  {
+    
+  }
+  
+  jupiterCalc()  {
+    
+  }
 }
