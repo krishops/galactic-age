@@ -18,14 +18,20 @@ describe('SpaceTraveler', () => {
   });
 
   test('should return correct age on Mercury', () => {
-    expect(msFrizzle.mercuryCalc()).toEqual(142)
+    expect(msFrizzle.mercuryCalc()).toEqual(142);
   });
 
   test('should determine life expectancy on Mercury', () => {
-    expect(msFrizzle.mercuryLife()).toEqual(325)
+    expect(msFrizzle.mercuryLife()).toEqual(325);
   });
 
   test('should determine how many years left to live on Mercury', () => {
-    expect(msFrizzle.mercuryLifeToLive()).toEqual(183)
+    expect(msFrizzle.mercuryLifeToLive()).toEqual(183);
+  })
+
+  test('should determine how many years past life expectancy have been lived on Mercury', () => {
+    const msFrizzle = new SpaceTraveler(80, 78);
+    expect(msFrizzle.ageEarth).toEqual(80);
+    expect(msFrizzle.mercuryLifeToLive()).toEqual(8);
   })
 });
