@@ -28,7 +28,8 @@ export default class SpaceTraveler  {
   }
 
   venusLife() {
-
+    let venusLifeExpectancy = Math.round(this.lifeExpectancy / 0.62);
+      return venusLifeExpectancy;
   }
 
   marsCalc()  {
@@ -37,7 +38,8 @@ export default class SpaceTraveler  {
   }
 
   marsLife() {
-
+    let marsLifeExpectancy = Math.round(this.lifeExpectancy / 1.88);
+      return marsLifeExpectancy;
   }
 
   jupiterCalc()  {
@@ -46,6 +48,7 @@ export default class SpaceTraveler  {
   }
 
   jupiterLife() {
-
+    let jupiterLifeExpectancy = Math.round(this.lifeExpectancy / 11.86);
+      return jupiterLifeExpectancy;
   }
 }
