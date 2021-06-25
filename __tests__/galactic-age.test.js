@@ -23,5 +23,9 @@ describe('SpaceTraveler', () => {
 
   test('should determine life expectancy on Mercury', () => {
     expect(msFrizzle.mercuryLife()).toEqual(325)
+  });
+
+  test('should determine how many years left to live on Mercury', () => {
+    expect(msFrizzle.mercuryLifeToLive()).toEqual(183)
   })
 });
