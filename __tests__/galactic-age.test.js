@@ -16,4 +16,8 @@ describe('SpaceTraveler', () => {
     expect(msFrizzle.ageJupiter).toEqual(0);
     expect(msFrizzle.lifeExpectancy).toEqual(78);
   });
+
+  test('should return correct age on Mercury', () => {
+    expect(msFrizzle.mercuryCalc).toEqual(142)
+  })
 });

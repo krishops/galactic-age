@@ -6,6 +6,9 @@ export default class SpaceTraveler  {
     this.ageMars = 0;
     this.ageJupiter = 0;
     this.lifeExpectancy = lifeExpectancy;
-
   }
+
+  mercuryCalc ()  {
+    
+  }  
 }
