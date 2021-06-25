@@ -10,8 +10,28 @@ $(document).ready(function () {
     event.preventDefault();
     const ageEarth = parseInt($("#current-age").val());
     const lifeExpectancy = parseInt($("#life-expectancy").val());
-    let msFrizzle = new SpaceTraveler(ageEarth, lifeExpectancy);
     $("#ageEarth").text(ageEarth);
     $("#lifeExpectancy").text(lifeExpectancy);
+    let msFrizzle = new SpaceTraveler(ageEarth, lifeExpectancy);
+
+    $("#ageMercury").text(msFrizzle.mercuryCalc());
+    $("#mercuryLifeExpectancy").text(msFrizzle.mercuryLife());
+    $("#lifeLeftMercury").text(msFrizzle.mercuryLifeToLive());
+
+    $("#ageVenus").text(msFrizzle.venusCalc());
+    $("#venusLifeExpectancy").text(msFrizzle.venusLife());
+    $("#lifeLeftVenus").text(msFrizzle.venusLifeToLive());
+
+    $("#ageMars").text(msFrizzle.marsCalc());
+    $("#marsLifeExpectancy").text(msFrizzle.marsLife());
+    $("#lifeLeftMars").text(msFrizzle.marsLifeToLive());
+
+    $("#ageJupiter").text(msFrizzle.jupiterCalc());
+    $("#jupiterLifeExpectancy").text(msFrizzle.jupiterLife());
+    $("#lifeLeftJupiter").text(msFrizzle.jupiterLifeToLive());
+
+    $("form#space-age").trigger("reset");
+
+
   });
 });
