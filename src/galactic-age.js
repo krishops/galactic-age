@@ -14,6 +14,7 @@ export default class SpaceTraveler  {
   }  
 
   mercuryLife() {
-    
+    let mercuryLifeExpectancy = Math.round(this.lifeExpectancy / 0.24);
+      return mercuryLifeExpectancy
   }
 }
