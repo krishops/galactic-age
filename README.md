@@ -29,7 +29,6 @@ This program was developed to demonstrate proper use of Test Driven Development.
 3. Open `galactic-age/dist/index.html` to use the program in the browser
 4. To open a development server run `npm run start` in the command line
 
-
 ## Known Bugs
 
 * There are no known bugs in this project.
