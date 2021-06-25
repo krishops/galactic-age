@@ -20,9 +20,15 @@ This program was developed to demonstrate proper use of Test Driven Development.
 
 ## Setup/Installation Requirements
 
-1. Clone the project: `$ git clone 
-2. Navigate to the new `galactic-age` directory and open with your preferred text editor.
-3. Within the top level of the cloned directory, open language-selector/index.html to run the program in the browser.
+1. Clone the project: `$ git clone https://github.com/krishops/galactic-age.git`
+2. Within your command line:
+    * Navigate to `galactic-age/`
+    * Run `npm init -y` to prepare for npm install
+    * Run `npm install` to install dependencies
+    * Run `npm run build` to bundle the program for use
+3. Open `galactic-age/dist/index.html` to use the program in the browser
+4. To open a development server run `npm run start` in the command line
+
 
 ## Known Bugs
 
@@ -38,9 +44,3 @@ Copyright (c) Kristen Hopper
 
 hopperdavis@gmail.com
 
-
-
-only need one class/constructor - SpaceTraveler: ageEarth, ageMercury=0, ageVenus, ageMars, ageJupiter, lifeExpectancy, 
-methods: ageMercury() ageVenus() ageMars() ageJupiter() return ages
-      lifeMercury() lifeVenus() lifeMars() lifeJupiter() 
-        if exceeds ((math)) return lived past life else return expectancy
