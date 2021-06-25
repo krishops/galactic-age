@@ -5,7 +5,7 @@ describe('SpaceTraveler', () => {
   let msFrizzle;
 
   beforeEach(() =>  {
-    msFrizzle = new SpaceTraveler(34, 0, 0, 0, 0, 78);
+    msFrizzle = new SpaceTraveler(34, 78);
   });
 
   test('should create a SpaceTraveler object', () => {
