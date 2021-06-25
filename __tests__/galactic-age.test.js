@@ -58,4 +58,16 @@ describe('SpaceTraveler', () => {
   test('should determine life expectancy on Jupiter', () => {
     expect(msFrizzle.jupiterLife()).toEqual(7);
   });
+
+  test('should determine how many years left to live on Venus', () => {
+    expect(msFrizzle.venusLifeToLive()).toEqual(71);
+  });
+
+  test('should determine how many years left to live on Mars', () => {
+    expect(msFrizzle.marsLifeToLive()).toEqual(23);
+  });
+
+  test('should determine how many years left to live on Jupiter', () => {
+    expect(msFrizzle.jupiterLifeToLive()).toEqual(4);
+  });
 });
