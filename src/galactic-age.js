@@ -12,4 +12,8 @@ export default class SpaceTraveler  {
     let ageMercury = Math.round(this.ageEarth / 0.24);
       return ageMercury;
   }  
+
+  mercuryLife() {
+    
+  }
 }
