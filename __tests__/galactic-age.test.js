@@ -70,4 +70,23 @@ describe('SpaceTraveler', () => {
   test('should determine how many years left to live on Jupiter', () => {
     expect(msFrizzle.jupiterLifeToLive()).toEqual(4);
   });
+
+  test('should determine how many years past life expectancy have been lived on Venus', () => {
+    const msFrizzle = new SpaceTraveler(80, 78);
+    expect(msFrizzle.ageEarth).toEqual(80);
+    expect(msFrizzle.venusLifeToLive()).toEqual(3);
+  });
+
+  test('should determine how many years past life expectancy have been lived on Mars', () => {
+    const msFrizzle = new SpaceTraveler(80, 78);
+    expect(msFrizzle.ageEarth).toEqual(80);
+    expect(msFrizzle.marsLifeToLive()).toEqual(2);
+  });
+
+  test('should determine how many years past life expectancy have been lived on Jupiter', () => {
+    const msFrizzle = new SpaceTraveler(90, 78);
+    expect(msFrizzle.ageEarth).toEqual(90);
+    expect(msFrizzle.jupiterLifeToLive()).toEqual(1);
+  });
+
 });
