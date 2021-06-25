@@ -23,15 +23,18 @@ export default class SpaceTraveler  {
   }
 
   venusCalc()  {
-  
+    let ageVenus = Math.round(this.ageEarth / 0.62);
+      return ageVenus;
   }
 
 
   marsCalc()  {
-    
+    let ageMars = Math.round(this.ageEarth / 1.88);
+      return ageMars;
   }
-  
+
   jupiterCalc()  {
-    
+    let ageJupiter = Math.round(this.ageEarth / 11.86);
+      return ageJupiter;
   }
 }
