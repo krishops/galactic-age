@@ -20,17 +20,6 @@ export default class SpaceTraveler {
   mercuryLifeToLive() {
     let lifeLeftMercury = Math.abs(this.mercuryLife() - this.mercuryCalc());
     return lifeLeftMercury;
-    // let lifeLeftMercury = 0
-    // let outlivedMercury = 0
-    // if (this.mercuryLife() >= this.mercuryCalc()) {
-    //   lifeLeftMercury = this.mercuryLife() - this.mercuryCalc();
-    // } else {
-    //   outlivedMercury = this.mercuryCalc() - this.mercuryLife();
-    // }
-    // return {
-    //   lifeLeftMercury: lifeLeftMercury,
-    //   outlivedMercury: outlivedMercury,
-    // }
   }
 
   venusCalc() {
