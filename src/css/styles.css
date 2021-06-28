@@ -1,3 +1,27 @@
+.school {
+  background: url("https://quizizz.com/_media/quizzes/41e11205-6041-4149-9b14-8e8d21e493d9_900_900");
+}
+
+.card  {
+  background-color: yellow;
+}
+
+.card-header  {
+  background-color: black;
+}
+
+h3  {
+  color: white;
+}
+
+h5  {
+  color: white;
+}
+
+#attack {
+  background-color: black;
+}
+
 .outlived {
   display: none
 }
